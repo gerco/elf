@@ -14,7 +14,7 @@ namespace Elf
     {
         public static void Main(string[] args)
         {
-            // CreateHostBuilder(args).Build().Run();
+            CreateHostBuilder(args).Build().Run();
 
             var hostname = "home.dries.info";
             short port = 443;

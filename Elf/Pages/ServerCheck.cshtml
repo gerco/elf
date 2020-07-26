@@ -1,0 +1,24 @@
+﻿@page
+@model Elf.Pages.ServerCheckModel
+@{
+    ViewData["Title"] = "Server Check";
+}
+
+<div class="row mb-2">
+    <h1 class="display-4">Server check</h1>
+</div>
+
+<div class="row">
+    <form method="post">
+        <div class="form-group">
+            <label for="hostname">Host name or IP address</label>
+            <input name="hostname" type="text" placeholder="example.com"/>
+        </div>
+        <div class="form-group">
+            <label for="port">Port</label>
+            <input name="port" type="number" min="1" max="65536" placeholder="443" />
+        </div>
+        <button type="submit" class="btn btn-primary">Check</button>
+    </form>
+
+</div>

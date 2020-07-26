@@ -4,4 +4,11 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.6" />
+    <PackageReference Include="Westwind.AspnetCore.LiveReload" Version="0.2.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Pages\Index %28copy%29.cshtml" />
+  </ItemGroup>
 </Project>
